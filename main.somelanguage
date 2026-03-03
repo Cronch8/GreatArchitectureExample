@@ -1,0 +1,73 @@
+
+Here's the good way:
+
+
+The main function {
+    That arbitrary class constructor()
+    saving that arbitrary class's variable to a different variable because you wanted to use it
+    actual code (05)
+    arbitrary class's method that saves some data()
+}
+
+A different utility class {
+    some variable
+    a tiny utility function that's also only used once {
+        actual code (01)
+        usage of this variable
+    }
+    
+    an unused function {
+        actual code
+    }
+}
+
+an arbitrary class {
+    another variable definition
+
+    Constructor {
+        a random function that's only used once and is defined right next to it's definition()
+    }
+
+    that random function that's only used once and is defined right next to it's definition {
+        actual code (00)
+        that tiny utility function that's also only used once()
+        usage of the before defined variable
+        actual code (02)
+        a method that saves some data ()
+    }
+
+    a method that saves some data {
+        actual code (03) (06)
+        actual code (04) (07)
+    }
+}
+
+
+
+--------------
+--------------
+
+
+
+Here's an alternative architecture for the same ammount of code, but who would ever structure it like this, it's too short like this!
+
+
+
+The main function {
+    actual code (00)
+    actual code (01)
+    some variable definition
+    usage of the variable
+    another variable definition
+    usage of the second variable
+    actual code (02)
+    a function that saves some data()
+    actual code (05)
+    a function that saves some data()
+}
+
+a function that saves some data {
+    actual code (03) (06)
+    actual code (04) (07)
+}
+
